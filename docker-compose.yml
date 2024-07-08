@@ -1,8 +1,8 @@
 version: "3.9"
 services:
 
-  spring-api-image:
-    image: spring-api-image
+  spring-docker-image:
+    image: spring-docker-image
     container_name: spring-api-container
     build:
       context: .
@@ -20,7 +20,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 1998
       MYSQL_DATABASE: dockerDB
-      MYSQL_USER: sperezp
+      MYSQL_USER: nibi
       MYSQL_PASSWORD: 150919
     ports:
       - "3307:3306"
